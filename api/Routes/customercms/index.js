@@ -1,0 +1,26 @@
+const express = require('express')
+const venueRoutes = require('../customercms/VenueRoute')
+const catreenRoutes = require('../customercms/CatreenRoute')
+const decoratorRoutes = require('../customercms/DecoratorRoute')
+const photographerRoutes = require('../customercms/PhotographerRoute')
+const musicRoutes = require('../customercms/MusicRoute')
+const categoryRoutes = require('../customercms/CategoryRoute')
+const menuRoutes = require('../customercms/MenuRoute')
+const orderRoutes = require('../customercms/OrderRoute')
+const customerRoutes = require('../customercms/CustomerRoute')
+const paymentRoutes = require('../customercms/PaymentRoute')
+
+const router = express.Router()
+
+router.use('/venues', venueRoutes)
+router.use('/catreens', catreenRoutes)
+router.use('/decorators', decoratorRoutes)
+router.use('/photographers', photographerRoutes)
+router.use('/musics', musicRoutes)
+router.use('/categories', categoryRoutes)
+router.use('/menus', menuRoutes)
+router.use('/orders', orderRoutes)
+router.use('/customers', customerRoutes)
+router.use('/payments', paymentRoutes)
+
+module.exports = router 

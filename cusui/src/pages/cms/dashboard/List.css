@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.image-container {
+    height: 200px; /* Set a fixed height for the image container */
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the checkbox is positioned at the bottom */
+}
+
+.form-check {
+    margin-top: auto; /* Pushes the checkbox to the bottom */
+}
